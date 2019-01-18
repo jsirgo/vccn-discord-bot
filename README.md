@@ -1,16 +1,16 @@
 # VCCN Discord bot
-Voice channel connection notification Discord bot
+Voice channel connections notification Discord bot
 
-This bot send a message when a user is connected to a voice channel in the text channel that has been started.
+This bot sends a message when a user is connected to a voice channel in the text channel that has been started.
 
 ## Commands
 * **help**
 * **start** - Starts the bot in the text channel
 * **stop** - Stops the bot
 * **level {0}** - Notification level
-⋅⋅* **0** - Only notify when the first user enters a channel (Default)
-⋅⋅* **1** - Notifies when a user joins a channel
-⋅⋅* **2** - Notifies when a user joins or disconnects from a channel
+    * **0** - Only notify when the first user enters a channel (Default)
+    * **1** - Notifies when a user joins a channel
+    * **2** - Notifies when a user joins or disconnects from a channel
 * **tts {0}** - Enables text to speech to read the notification messages: false or true
 
 ## Requirements
