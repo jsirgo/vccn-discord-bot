@@ -45,8 +45,7 @@ export class Bot {
         });
 
         this.client.on("voiceStateUpdate", (oldMember, newMember) => {
-            if(this.textChannel != null && !oldMember.user.bot && !oldMember.user.bot){
-                
+            if(this.textChannel != null && !oldMember.user.bot && !newMember.user.bot){
                if(newMember.voiceChannel !== undefined) {
                     // User Join
                     if(this.notificationLevel != this.LEVEL_FIRST_JOIN || newMember.voiceChannel.members.size == 1){
