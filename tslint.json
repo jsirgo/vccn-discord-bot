@@ -1,0 +1,12 @@
+{
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint-eslint-rules"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-duplicate-variable": true,
+        "no-constant-condition": true
+    },
+    "rulesDirectory": []
+}

@@ -1,0 +1,28 @@
+{
+    "name": "vccn-discord-bot",
+    "version": "1.0.0",
+    "description": "Voice channel connections notification Discord bot",
+    "main": "dist/bot.js",
+    "scripts": {
+        "start": "node dist/Main.js",
+        "build": "npm run build-ts && npm run tslint",
+        "build-ts": "tsc",
+        "tslint": "tslint -c tslint.json -p tsconfig.json",
+        "nohup": "nohup node dist/Main.js > output.log &"
+    },
+    "author": "jasirgo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jasirgo/vccn-discord-bot.git"
+    },
+    "license": "GPL-3.0",
+    "dependencies": {
+        "discord.js": "^11.4.2"
+    },
+    "devDependencies": {
+        "@types/node": "^10.12.18",
+        "tslint": "^5.12.1",
+        "tslint-eslint-rules": "^5.4.0",
+        "typescript": "^3.2.2"
+    }
+}
