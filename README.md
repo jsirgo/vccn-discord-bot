@@ -25,7 +25,7 @@ npm install
 ```
 
 ### Set up bot configuration
-Copy the example configuration file and rename it from /example-config.json to /src/config.json and edit the configuration as you need:
+1. Copy the example configuration file and rename it from /example-config.json to /src/config.json and edit the configuration as you need:
 * **token:** Get the bot token from the Discord Developer Portal and paste it here.
 * **notificationLevel:** number from 0 to 2:
     * **0** - Notifies when the first user joins the channel (Default).
@@ -35,7 +35,7 @@ Copy the example configuration file and rename it from /example-config.json to /
 * **defaultTextChannel:** By default it is null, the bot will not start automatically in any text channel, for this it will be necessary to use the% start command in the desired channel. If you want the bot to start automatically in a channel modify null by a string with the name of the desired channel *"name of channel"*.
 * **blacklist:** You can keep it as an empty array *[]* or configure the voice channel names that you won't to be notified *["name of channel a","name of channel b"]*
 
-Bot messages are configurable editing /src/config/messages.json
+2. Copy the example messages file and rename it from /example-messages.json to /src/messages.json and edit the messages as you need.
 
 ### Build and run
 Build the code:

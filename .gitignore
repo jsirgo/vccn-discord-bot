@@ -2,3 +2,4 @@ node_modules/
 dist/
 output.log
 src/config/config.json
+src/config/messages.json
