@@ -1,0 +1,15 @@
+{
+    "botStartedInChannel":"Bot started in this channel {channel}",
+    "botAlreadyInitializedInChannel":"Bot already initialized in channel: {channel}",
+    "botNotInitialized":"Bot not initialized",
+    "botStopped":"Bot stopped",
+    "notificationLevelSetTo":"Notification level set to: {notificationLevel} (Value will be reset to default if the bot is rebooted or stopped)",
+    "invalidNotificationLevel":"Invalid notification level {notificationLevel}",
+    "ttsEnabled":"tts enabled (Value will be reset to default if the bot is rebooted or stopped)",
+    "ttsDisabled":"tts disabled (Value will be reset to default if the bot is rebooted or stopped)",
+    "invalidCommandArguments":"Invalid command arguments",
+    "helpMessage":"Help:\n%start - Starts the bot in the text channel\n%stop - Stops the bot\n%level {0} - Notification level\n\t0 - Only notifies when the first user joins a voice channel or moves to an empty voice channel (Default)\n\t1 - Notifies when a user joins a channel\n\t2 - Notifies when a user joins or disconnects from a channel\n%tts {0} - Enable tts: false or true",
+    "userJoinsChannel":"@here User: {user} conected to: {voiceChannel} voice channel",
+    "userDisconnectsChannel":"@here User: {user} disconnected from: {voiceChannel} voice channel",
+    "userChangesChannel":"@here User: {user} changed to: {voiceChannel} voice channel"
+}   

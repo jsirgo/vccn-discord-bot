@@ -1,0 +1,7 @@
+{
+    "token":"YOUR_TOKEN_HERE",
+    "notificationLevel":0,
+    "ttsEnabled":false,
+    "defaultTextChannel":null,
+    "blacklist":["name of channel a","name of channel b"]
+}
