@@ -1,0 +1,1 @@
+Create in this folder config.json and messages.json. Example files could be found in the root directory
