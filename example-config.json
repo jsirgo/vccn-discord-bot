@@ -3,5 +3,6 @@
     "notificationLevel":0,
     "ttsEnabled":false,
     "defaultTextChannel":null,
+    "silentStartup":false,
     "blacklist":["name of channel a","name of channel b"]
 }
