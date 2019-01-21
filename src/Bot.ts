@@ -27,7 +27,10 @@ export class Bot {
                 let channels = this.client.channels.filter(channel => channel instanceof TextChannel && channel.name === Config.defaultTextChannel);
                 if(channels.size === 1){
                     this.textChannel = <TextChannel>channels.first();
-                    this.textChannel.send(Format(Messages.botStartedInChannel, {channel: this.textChannel}));
+                    console.log("Bot started in channel "+this.textChannel.name)
+                    if(!Config.silentStartup){
+                        this.textChannel.send(Format(Messages.botStartedInChannel, {channel: this.textChannel}));
+                    }
                 }else{
                     console.log("A default \""+Config.defaultTextChannel+"\" text channel is configured, but can't get it.")
                 }
