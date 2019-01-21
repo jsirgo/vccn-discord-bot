@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+ - "node"
+ - "lts/*"
+before_install:
+ - cp example-config.json src/config/config.json
+ - cp example-messages.json src/config/messages.json
+script:
+ - npm run build
+branches:
+ only:
+  - master
+  - develop
+notifications:
+ email:
+  on_success: never
+  on_failure: always

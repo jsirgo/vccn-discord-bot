@@ -1,6 +1,8 @@
 # VCCN Discord bot
 **Voice channel connections notification Discord bot**
 
+[![Build Status](https://travis-ci.org/jasirgo/vccn-discord-bot.svg?branch=master)](https://travis-ci.org/jasirgo/vccn-discord-bot)
+
 This bot sends a message when a user is connected to a voice channel in the text channel that has been started.
 
 This code is only intended to work in a private bot, it is not suitable to work for multiple discord servers with a single bot.
