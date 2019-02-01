@@ -29,7 +29,7 @@ export class Bot {
                     this.textChannel = <TextChannel>channels.first();
                     console.log("Bot started in channel "+this.textChannel.name)
                     if(!Config.silentStartup){
-                        this.textChannel.send(Format(Messages.botStartedInChannel, {channel: this.textChannel}));
+                        this.textChannel.send(Format(Messages.botStartedInChannel, {channel: this.textChannel.name}));
                     }
                 }else{
                     console.log("A default \""+Config.defaultTextChannel+"\" text channel is configured, but can't get it.")
@@ -66,14 +66,14 @@ export class Bot {
                     if(oldMember.voiceChannel === undefined){
                         // User joined a voice channel
                         if(this.notificationLevel !== this.LEVEL_FIRST_JOIN || newMember.voiceChannel.members.size === 1){
-                            this.textChannel.send(Format(Messages.userJoinsChannel, {user: newMember, voiceChannel: newMember.voiceChannel}), {
+                            this.textChannel.send(Format(Messages.userJoinsChannel, {user: newMember, voiceChannel: newMember.voiceChannel.name}), {
                                 tts: this.ttsEnabled
                             });
                         }
                     }else if(newMember.voiceChannel.id !== oldMember.voiceChannel.id){
                         // User moved to another voice channel
                         if(this.notificationLevel !== this.LEVEL_FIRST_JOIN || newMember.voiceChannel.members.size === 1){
-                            this.textChannel.send(Format(Messages.userChangesChannel, {user: newMember, voiceChannel: newMember.voiceChannel}), {
+                            this.textChannel.send(Format(Messages.userChangesChannel, {user: newMember, voiceChannel: newMember.voiceChannel.name}), {
                                 tts: this.ttsEnabled
                             });
                         }
@@ -81,7 +81,7 @@ export class Bot {
                 } else if(this.notificationLevel === this.LEVEL_JOIN_DISCONNECT  && newMember.voiceChannel === undefined 
                     && oldMember.voiceChannel !== undefined && !this.isChannelInBlacklist(oldMember.voiceChannel)){
                     // User disconnect
-                    this.textChannel.send(Format(Messages.userDisconnectsChannel, {user: oldMember, voiceChannel: oldMember.voiceChannel}), {
+                    this.textChannel.send(Format(Messages.userDisconnectsChannel, {user: oldMember, voiceChannel: oldMember.voiceChannel.name}), {
                         tts: this.ttsEnabled
                     });
                 }
@@ -103,9 +103,9 @@ export class Bot {
     private startCommand(message:Message){
         if(this.textChannel === null){
             this.textChannel = <TextChannel>message.channel;
-            message.channel.send(Format(Messages.botStartedInChannel, {channel: this.textChannel}));
+            message.channel.send(Format(Messages.botStartedInChannel, {channel: this.textChannel.name}));
         }else{
-            message.channel.send(Format(Messages.botAlreadyInitializedInChannel, {channel: this.textChannel}));
+            message.channel.send(Format(Messages.botAlreadyInitializedInChannel, {channel: this.textChannel.name}));
         }
     }
 
