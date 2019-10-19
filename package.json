@@ -17,14 +17,14 @@
     },
     "license": "GPL-3.0",
     "dependencies": {
-        "discord.js": "^11.4.2",
-        "string-template": "^1.0.0"
+        "discord.js": "11.5.1",
+        "string-template": "1.0.0"
     },
     "devDependencies": {
-        "@types/node": "^10.12.18",
-        "@types/string-template": "^1.0.2",
-        "tslint": "^5.12.1",
-        "tslint-eslint-rules": "^5.4.0",
-        "typescript": "^3.2.2"
+        "@types/node": "12.11.1",
+        "@types/string-template": "1.0.2",
+        "tslint": "5.20.0",
+        "tslint-eslint-rules": "5.4.0",
+        "typescript": "3.6.4"
     }
 }
