@@ -10,10 +10,10 @@
         "tslint": "tslint -c tslint.json -p tsconfig.json",
         "nohup": "nohup node dist/Main.js > output.log &"
     },
-    "author": "jasirgo",
+    "author": "jsirgo",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jasirgo/vccn-discord-bot.git"
+        "url": "https://github.com/jsirgo/vccn-discord-bot.git"
     },
     "license": "GPL-3.0",
     "dependencies": {
