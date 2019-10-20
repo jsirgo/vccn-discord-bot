@@ -33,8 +33,9 @@ npm install
     * **0** - Notifies when the first user joins the channel (Default).
     * **1** - Notifies when a user joins a channel.
     * **2** - Notifies when a user joins or disconnects from a channel.
-* **ttsEnabled:** Enables text to speech to read the notification messages: false or true.
-* **defaultTextChannel:** By default it is null, the bot will not start automatically in any text channel, for this it will be necessary to use the% start command in the desired channel. If you want the bot to start automatically in a channel modify null by a string with the name of the desired channel *"name of channel"*.
+* **ttsEnabled:** Enables text to speech to read the notification messages: *false* or *true*.
+* **defaultTextChannel:** By default it is *null*, the bot will not start automatically in any text channel, for this it will be necessary to use the% start command in the desired channel. If you want the bot to start automatically in a channel modify *null* by a string with the name of the desired channel *"name of channel"*.
+* **silentStartup:** Only takes effect when a defaultTextChannel is set, bot will not send the startup message when it is set to *true* (Default *false*)
 * **blacklist:** You can keep it as an empty array *[]* or configure the voice channel names that you won't to be notified *["name of channel a","name of channel b"]*
 
 2. Copy the example messages file and rename it from /example-messages.json to /src/messages.json and edit the messages as you need.
