@@ -1,12 +1,12 @@
 import Discord, { Message, TextChannel, VoiceChannel } from "discord.js";
 import Format from "string-template";
-import Config from './config/config.json';
-import Messages from './config/messages.json';
+
+const Config = require('../config/config.json');
+const Messages = require('../config/messages.json');
 
 export class Bot {
 
     private readonly LEVEL_FIRST_JOIN:number = 0;
-    private readonly LEVEL_JOIN:number = 1;
     private readonly LEVEL_JOIN_DISCONNECT:number = 2;
 
     private client:Discord.Client;

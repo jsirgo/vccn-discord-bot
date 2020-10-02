@@ -27,7 +27,7 @@ npm install
 ```
 
 ### Set up bot configuration
-1. Copy the example configuration file and rename it from /example-config.json to /src/config.json and edit the configuration as you need:
+1. Copy the example configuration file and rename it from /example-config.json to /config/config.json and edit the configuration as you need:
 * **token:** Get the bot token from the Discord Developer Portal and paste it here.
 * **notificationLevel:** number from 0 to 2:
     * **0** - Notifies when the first user joins the channel (Default).

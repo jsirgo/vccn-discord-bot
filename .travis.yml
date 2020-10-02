@@ -3,8 +3,8 @@ node_js:
  - "node"
  - "lts/*"
 before_install:
- - cp example-config.json src/config/config.json
- - cp example-messages.json src/config/messages.json
+ - cp example-config.json config/config.json
+ - cp example-messages.json config/messages.json
 script:
  - npm run build
 branches:
